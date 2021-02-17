@@ -1,38 +1,175 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  background-image: linear-gradient(90deg,rgba(19, 19, 22, 0.952) 0, 
+  rgba(110, 109, 109, 0.952) 25%,
+  rgba(168, 168, 172, 0.952) 50%,
+  rgba(202, 202, 202, 0.952) 75%,
+  rgba(225, 225, 226, 0.952) 100%);
+  
+}
+
 .App {
   text-align: center;
+  padding-top: 36px;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.SearchForm-wrapper{
+  display:flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .card{
+  padding-top:2%
+} */
+
+.MoviesList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MoviesList-item{
+  margin-bottom: 24px;
+  width: 48%;
+}
+
+.card-poster{
+  width: 300px;
+  height: 450px;
+}
+
+.MoviesList{
+  margin-bottom: 6%;
+}
+
+.detail{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  margin-bottom: 8%;
+}
+
+.detdiv-1{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-left: 3%;
+}
+
+.detdiv-2{
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgba(0, 0, 0, 0.658);
   color: white;
+  margin:1%;
+  justify-content: space-around;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.plot{
+  font-size: 22px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin:2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cast{
+  font-size: 28px;
+}
+
+.score{
+  background-color: rgb(53, 155, 173);
+  color: white;
+  font-size: 80px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+footer{
+  position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(90deg,rgba(19, 19, 22, 0.952) 0, 
+  rgba(44, 42, 42, 0.952) 25%,
+  rgba(61, 61, 66, 0.952) 50%,
+  rgba(95, 89, 89, 0.952) 75%,
+  rgba(109, 109, 114, 0.952) 100%);
+    /* background-color: rgba(36, 36, 41, 0.952); */
+    color: white;
+    height: 90px;
+    padding: 1%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px){
+  .detail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 30%;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .detdiv-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 5%;
+  }
+  
+  .detdiv-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+    margin:1%;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  .plot{
+    font-size: 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin:2%;
+  }
+  
+  .cast{
+    font-size: 18px;
+  }
+  
+  .score{
+    background-color: rgb(53, 155, 173);
+    color: white;
+    font-size: 30px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 5%;
+  }
+
+  footer{
+    font-size: 12px;
   }
 }
