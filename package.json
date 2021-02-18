@@ -2,7 +2,7 @@
   "name": "peliculas",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Dan-22-alt.github.io/app-peliculas",
+  "homepage": "http://Dan-22-alt.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
