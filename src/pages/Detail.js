@@ -44,7 +44,7 @@ export class Detail extends Component {
                 <h1 className='title'>{Title}</h1>
                 <div className='detail'>
                     <div className='detdiv-1'>
-                        <img className="card-poster" src={Poster} />
+                        <img alt ="" className="card-poster" src={Poster} />
                     </div>
                     <div className='detdiv-2'>                
                         <p className='plot'>Plot: {Plot}</p>
